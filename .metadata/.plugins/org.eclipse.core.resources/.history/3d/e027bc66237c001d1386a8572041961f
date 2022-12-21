@@ -1,0 +1,8 @@
+package com.shop.myapp.service;
+
+public interface MemberService {
+	public List<MemberDTO> memberList() throws Exception;
+	public void joinUser(MemberDTO memberDto) throws Exception;;
+
+
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+ <head>
+ 	<title>tymeleaf 테스트2</title>
+ </head>
+ <body class="hold-transition sidebar-mini layout-fixed">
+ 	<div class="wrapper">
+ 		<h1>테스트 초기화 화면</h1>
+ 		<table>
+ 			<thead>
+ 				<th>아이디</th>
+ 				<th>비밀번호</th> 	
+ 				<th>기타사항</th>  							
+ 			</thead>
+ 			<tbody>
+ 				<tr th:each="sample : ${sampleList}">
+ 					<td th:text="${sample.id}"></td>
+ 					<td th:text="${sample.pw}"></td>
+					<th:block th:if="${sample.id} == 'admin'">
+					<td>
+					관리자
+					</td>
+					</th:block>
+					<th:block th:unless(else인거임)="${sample.id} == 'admin'">
+					<td>
+					일반회원
+					</td>
+					</th:block>
+ 				</tr>
+ 			</tbody>
+ 		</table>
+  	</div>
+ </body>
+</html>

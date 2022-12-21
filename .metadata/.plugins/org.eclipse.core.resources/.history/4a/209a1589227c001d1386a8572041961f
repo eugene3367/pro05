@@ -1,0 +1,19 @@
+package com.shop.myapp.service;
+
+
+@Service
+@AllArgsConstructor
+public class MemberServiceImpl {
+	private MemberRepository memberRepository;
+	
+	@Override
+	public List<MemberDTO> memberList() throws Exception {
+		return memberRepository.memberList();
+	}
+
+	@Override
+	public void joinUser(MemberDTO memberDto) throws Exception {
+		memberRepository.joinUser(memberDto);
+	}
+
+}
