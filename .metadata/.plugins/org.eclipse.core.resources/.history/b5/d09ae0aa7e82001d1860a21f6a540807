@@ -14,7 +14,7 @@
 	
 	<img src="${path1 }/templates/img/main.jpg" alt="더미이미지">
 	<img src="/static/img/main.jpg" alt="main"></img>
-
+	<img th:insert="/img/main.jpg" alt="main"></img>
 
 	<th:block th:insert="common/footer"></th:block>
 </div>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org"
+ xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+ 	<title>메인 데이터</title>
+ 	<th:block th:insert="common/head"></th:block>
+</head>
+<body>
+<div class="fluid-container">
+	<th:block th:insert="common/header"></th:block>
+	<div class="container">
+	<h2>메인 페이지</h2>
+	
+	<img src="${path1 }/templates/img/main.jpg" alt="더미이미지">
+	
+      <div class="content">
+            <figure class="visual">
+                <img src="./baner/main_pc01.jpg" alt="비주얼배너">
+            </figure>
+        </div>
+        <hr>
+        <div class="page_top">
+            <h2 class="page_tit">인기상품을 만나보세요.</h2>
+            <p class="page_sub"><a href="best.jsp">더보기</a></p>
+        </div>	
+		<div class="container" id="content">
+			<ul class="row" id="best">
+				<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="card" style="width: 18rem;">
+					  <img src="./content/1_best/best1.jpg" class="card-img-top" alt="더미이미지">
+					  <div class="card-body">
+					    <h5 class="card-title">[폴리쉬] 3종 기프트 세트 + 폴리쉬 리무버 증정</h5>					    
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</li>
+				<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="card" style="width: 18rem;">
+					  <img src="./content/1_best/best2.jpg" class="card-img-top" alt="더미이미지">
+					  <div class="card-body">
+					    <h5 class="card-title">[폴리쉬] 202 틸 그린</h5>					   
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</li>
+				<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="card" style="width: 18rem;">
+					  <img src="./content/1_best/best3.jpg" class="card-img-top" alt="더미이미지">
+					  <div class="card-body">
+					    <h5 class="card-title">[폴리쉬] 200 재너두 그린</h5>					    
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</li>
+				<li class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="card" style="width: 18rem;">
+					  <img src="./content/1_best/best4.jpg" class="card-img-top" alt="더미이미지">
+					  <div class="card-body">
+					    <h5 class="card-title">[젤네일] 토스트 베이지</h5>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</li>		
+			</ul>
+		</div>
+  	</div>
+	<th:block th:insert="common/footer"></th:block>
+</div>
+</body>
+</html>
