@@ -1,0 +1,12 @@
+package com.shop.myapp.domain;
+
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@NoArgsConstructor
+@ToString
+public class Board {
+	@Id
+	@GeneratedValue(strategy)
+
+}

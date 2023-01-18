@@ -1,0 +1,67 @@
+package com.shop.myapp.repository;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import lombok.extern.log4j.Log4j2;
+
+@SpringBootTest
+@Log4j2
+
+public class BoardRepositoryTest {
+	
+	@Autowired
+	BoardRepository boardRepository;
+	
+	@Test
+	public void testInsert() {
+//		Instream.rangeClosed(1, 10).forEach(i -> {
+//			Board borad = Board.builder()
+//					.title("제목"+i)
+//					.content("더미내용"+i)
+//					.writer("user"+i)
+//					.build();
+//			Board result = boardRepository.save(board);
+//			og.info("BND :"+result.getBno());
+//		});
+		
+//		@Test
+//		public void testSelect() {
+//			Long bno = 10L;
+//			Optional<Board> result = boardRepository.findById(bno);
+//			Board board = result.orElseThrow();
+//			log.info(board);
+//		}
+//	}
+//		@Test
+//		public void testUpdate() {
+//			Long bno = 8L;
+//			Optional<Board> result = boardRepository.findById(bno);
+//			Board board = result.orElseThrow();
+//			board.change("수정제목 8번글", "8번글 수정된 내용");
+//			boardRepository.save(board);
+//		}
+		
+//		@Test
+//		public void testDelete() {
+//			Long bno = 9L;
+//			boardRepository.deleteById(bno);
+//		}
+		
+		@
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

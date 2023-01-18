@@ -1,0 +1,34 @@
+package com.shop.myapp.repository;
+
+import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.shop.myapp.domain.Board;
+
+import lombok.extern.log4j.Log4j2;
+
+@SpringBootTest
+@Log4j2
+
+public class BoardRepositoryTest {
+	
+	@Autowired
+	BoardRepository boardRepository;
+	
+	@Test
+	public void testInsert() {
+		Instream.rangeClosed(1, 10).forEach(i -> {
+			Board borad = Board.builder()
+					.title("제목"+i)
+					.content("더미내용"+i)
+					.writer("user"+i)
+					.build();
+			Board result = boardRepository.save(board);
+			log.info("BND :"+result.getBno());
+		})
+	}
+
+}
